@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario de cumpleaños</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <form>
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label>Apellidos: </label>
+        <input type="text" name="apellido1" id="apellido1" required>
+        <input type="text" name="apellido2" id="apellido2" required>
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="fecha_nac">Fecha de nacimiento: </label>
+        <input type="date" name="fecha_nac" id="fecha_nac">
+        <br><br>
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad">
+        <br><br>
+        <h3>Elige tu postre:</h3>
+        <input type="radio" name="postre" value="natillas">Natillas de vainilla con galleta
+        <input type="radio" name="postre" value="coulant">Coulant de chocolate con helado de vainilla
+        <input type="radio" name="postre" value="crema">Crema catalana
+        <input type="radio" name="postre" value="sorbete">Sorbete de limón
+        <br><br>
+        <h3>Elige la fecha que mejor te venga</h3>
+        <input type="checkbox" name="fecha_fiesta" id="fecha_fiesta">Jueves 10 de octubre <br>
+        <input type="checkbox" name="fecha_fiesta" id="fecha_fiesta">Viernes 11 de octubre <br>
+        <input type="checkbox" name="fecha_fiesta" id="fecha_fiesta">Sábado 12 de octubre <br>
+        <br><br>
+        <h3>Deja aquí tu felicitación al cumpleañero</h3>
+        <textarea name="felicitacion" id="felicitacion" rows="7" cols="50"></textarea>
+    </form>
+</body>
+</html>
