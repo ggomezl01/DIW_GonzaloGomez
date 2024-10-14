@@ -1,0 +1,37 @@
+header{
+    background-color: red;
+    height: 20vh;
+}
+nav{
+    background-color: blue;
+    height: 10vh;
+}
+aside{
+    background-color: black;
+    color: white;
+    height: 50vh;
+    width: 20%;
+    float: left;
+}
+section{
+    background-color: grey;
+    height: 50vh;
+    width: 80%;
+    display: inline-block;
+}
+article{
+    height: 40vh;
+}
+#articulo1{
+    background-color: purple;
+}
+#articulo2{
+    background-color: brown;
+}
+footer{
+    background-color: green;
+    height: 20vh;
+}
+*{
+    font-size: 30px;
+}
