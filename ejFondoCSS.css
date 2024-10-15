@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Chulapa';
+    src: url('fonts/Chulapa-Bold.otf') format('truetype');
+}
+body{
+    margin: 0px;
+}
 header{
     background-color: red;
     height: 20vh;
@@ -17,21 +24,21 @@ section{
     background-color: grey;
     height: 50vh;
     width: 80%;
-    display: inline-block;
+    float: left;
 }
 article{
+    background-color: purple;
     height: 40vh;
 }
-#articulo1{
-    background-color: purple;
-}
-#articulo2{
+article + article{
     background-color: brown;
 }
 footer{
     background-color: green;
     height: 20vh;
+    float: left;
 }
 *{
     font-size: 30px;
+    font-family: 'Chulapa';
 }
