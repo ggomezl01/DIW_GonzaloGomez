@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+#casa{
+    position: relative;
+    background-image: url(./img/casa.jpg);
+    background-repeat: no-repeat;
+    width: 987px;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+#rail{
+    position: absolute;
+    width: 487px;
+    left: 204px;
+    top: 377px;
+}
+
+#puertacompleta{
+    top: 404px;
+    position: absolute;
+    width: 115px;
+    left: 400px;
+    transition: transform ease-in-out 2s;
+}
+
+#puertacompleta:hover{
+    transform: translate(-150px, 0);
+}
+
+#puerta{
+    width: 115px;
+    z-index: 0;
+}
+
+#engancheIZQ{
+    left: 0px;
+    top: -41px;
+    position: absolute;
+    width: 16px;
+    z-index: 1;
+}
+#engancheDCH {
+    left: 100px;
+    top: -41px;
+    position: absolute;
+    width: 16px;
+    z-index: 1;
+}
+#agatha{
+    right: 424px;
+    width: 178px;
+    position: absolute;
+    top: 404px;
+    transition: transform linear 3s;
+    z-index: 2;
+}
+#agatha:hover{
+    transform: translate(-250px, 0);
+}
