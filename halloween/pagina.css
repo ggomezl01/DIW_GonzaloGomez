@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+
+#halloween{
+    position: relative;
+    background-image: url(./img/fondo.jpg);
+    background-repeat: no-repeat;
+    width: 987px;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
