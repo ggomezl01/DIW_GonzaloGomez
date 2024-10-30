@@ -6,9 +6,52 @@ body{
     position: relative;
     background-image: url(./img/fondo.jpg);
     background-repeat: no-repeat;
-    width: 987px;
+    width: 1500px;
     height: 100vh;
     background-size: contain;
     background-position: center;
     margin: 0 auto;
+}
+
+#murcielago {
+    position: absolute;
+    top: 384px;
+    right: 627px;
+}
+
+#img_murcielago{
+    width: 92px;
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+#murcielago img:hover{
+    opacity: 1;
+}
+
+#ojosCalabaza{
+    position: absolute;
+    left: 954px;
+    top: 646px;
+    opacity: 0;
+}
+
+#ojoIzq,#ojoDcho{
+    width: 78px;
+    transition: transform ease-in-out 3s;
+}
+
+#ojoIzq{
+    margin-bottom: 11px;
+    transform: rotate(360deg);
+}
+
+#ojoDcho{
+    margin-left: 34px;
+    margin-top: 11px;
+    transform: rotate(360deg);
+}
+
+#ojosCalabaza:hover{
+    opacity: 1;
 }
