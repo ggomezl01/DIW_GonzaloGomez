@@ -33,25 +33,24 @@ body{
     position: absolute;
     left: 954px;
     top: 646px;
-    opacity: 0;
 }
 
 #ojoIzq,#ojoDcho{
     width: 78px;
-    transition: transform ease-in-out 3s;
+    transition: transform linear 3s;
+    opacity: 1;
 }
 
 #ojoIzq{
     margin-bottom: 11px;
-    transform: rotate(360deg);
 }
 
 #ojoDcho{
     margin-left: 34px;
     margin-top: 11px;
-    transform: rotate(360deg);
 }
 
-#ojosCalabaza:hover{
+#ojosCalabaza img:hover{
     opacity: 1;
+    transform: rotate(360deg);
 }
