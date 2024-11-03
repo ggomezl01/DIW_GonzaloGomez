@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #4a2e6b;
 }
 
 #halloween{
@@ -15,12 +16,12 @@ body{
 
 #murcielago {
     position: absolute;
-    top: 384px;
-    right: 627px;
+    top: 424px;
+    right: 616px;
 }
 
 #img_murcielago{
-    width: 92px;
+    width: 100px;
     opacity: 0;
     transition: ease-in-out 1s;
 }
@@ -31,12 +32,12 @@ body{
 
 #ojosCalabaza{
     position: absolute;
-    left: 954px;
-    top: 646px;
+    left: 977px;
+    top: 715px;
 }
 
 #ojoIzq,#ojoDcho{
-    width: 78px;
+    width: 83px;
     transition: transform linear 3s;
     opacity: 1;
 }
@@ -46,11 +47,82 @@ body{
 }
 
 #ojoDcho{
-    margin-left: 34px;
+    margin-left: 41px;
     margin-top: 11px;
 }
 
 #ojosCalabaza img:hover{
     opacity: 1;
     transform: rotate(360deg);
+}
+
+#lunaDream {
+    position: absolute;
+    left: 653px;
+    top: 285px;
+}
+
+#lunaDream img{
+    width: 152px;
+    transition: width ease 3s;
+}
+
+#lunaDream img:hover{
+    width: 100px;
+}
+
+#tumba{
+    position: absolute;
+    left: 800px;
+    top: 761px;
+}
+
+#tumba img{
+    width: 80px;
+    transition: width 4s, transform 3s;
+}
+
+#tumba img:hover{
+    width: 130px;
+    transform: rotate(360deg);
+}
+
+#agatha{
+    position: absolute;
+    left: 238px;
+    top: 147px;
+    transition: left 2s, top 2s, width 2s;
+}
+
+#agatha img{
+    width: 142px;
+}
+
+#agatha:hover{
+    left: 716px;
+    top: 623px;
+}
+
+#wiccan {
+    position: absolute;
+    left: 1013px;
+    top: 330px;
+}
+
+#chaval {
+    width: 132px;
+}
+
+#corona{
+    rotate: 11deg;
+    left: 24px;
+    position: absolute;
+    top: -13px;
+    width: 48px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#corona:hover{
+    opacity: 1;
 }
