@@ -1,0 +1,35 @@
+body{
+    margin: 0 auto;
+}
+#fondo{
+    background-color: darkmagenta;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#suelo{
+    background-color: forestgreen;
+    height: 30%;
+    width: 100%;
+}
+#coche{
+    position: absolute;
+    left: 0;
+    top: 415px;
+    transform: rotateY(180deg);
+    animation: movimiento_coche ease-in 5s;
+}
+#coche img{
+    width: 360px;
+}
+#muro{
+    left: 1000px;
+    position: absolute;
+    top: 372px;
+}
+
+@keyframes movimiento_coche{
+    from {left: 0;}
+    to {left:800px;}
+}
