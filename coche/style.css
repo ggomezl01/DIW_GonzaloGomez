@@ -1,8 +1,16 @@
+/*Empezamos con un coche que va de izquierda a derecha
+Atraviesa un muro haciendo algún efecto de humo  y escombros
+y se choca contra un edificio que no es suyo al llegar a la derecha
+Aparecen llamas en el impacto sobre el edificio y el coche sufre algún desperfecto
+Hay sonido y tenéis que obligar al usuario a interactuar con la web
+Mientras tanto hay pájaros y aparecen topos de manera infinita y en varios sitios
+La animación finalizará al explotar el coche*/
+
 body{
     margin: 0 auto;
 }
 #fondo{
-    background-color: darkmagenta;
+    background-color: skyblue;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -17,19 +25,34 @@ body{
     position: absolute;
     left: 0;
     top: 415px;
-    transform: rotateY(180deg);
-    animation: movimiento_coche ease-in 5s;
+    animation: movimiento_coche ease-in 5s, rotation_coche ease-in 4s;
 }
 #coche img{
     width: 360px;
 }
 #muro{
-    left: 1000px;
+    left: 600px;
     position: absolute;
     top: 372px;
+}
+
+#rampa{
+    position: absolute;
+    left: 372px;
+    top: 446px;
+}
+
+#rampa img{
+    height: 172px;
+    width: 396px;
 }
 
 @keyframes movimiento_coche{
     from {left: 0;}
     to {left:800px;}
+}
+
+@keyframes rotation_coche{
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(-20deg);}
 }
