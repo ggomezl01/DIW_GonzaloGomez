@@ -23,22 +23,24 @@ body{
 }
 #coche{
     position: absolute;
-    left: 0;
-    top: 415px;
-    animation: movimiento_coche ease-in 5s, rotation_coche ease-in 4s;
+    left: 6px;
+    top: 374px;
+    transform: rotateZ(-23deg);
+    animation: movimiento_coche ease-in 3s;
+    animation-fill-mode: forwards;
 }
 #coche img{
     width: 360px;
 }
 #muro{
-    left: 600px;
+    left: 1000px;
     position: absolute;
     top: 372px;
 }
 
 #rampa{
     position: absolute;
-    left: 372px;
+    left: 78px;
     top: 446px;
 }
 
@@ -48,11 +50,6 @@ body{
 }
 
 @keyframes movimiento_coche{
-    from {left: 0;}
-    to {left:800px;}
-}
-
-@keyframes rotation_coche{
-    from {transform: rotateZ(0deg);}
-    to {transform: rotateZ(-20deg);}
+    from {left: 6px; top: 374px;}
+    to {left:800px; top: 100px;}
 }
