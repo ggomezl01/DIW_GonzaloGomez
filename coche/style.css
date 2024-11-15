@@ -23,10 +23,9 @@ body{
 }
 #coche{
     position: absolute;
-    left: 6px;
-    top: 374px;
-    transform: rotateZ(-23deg);
-    animation: movimiento_coche ease-in 3s;
+    left: -44px;
+    top: 306px;
+    animation: movimiento_coche ease-in 10s;
     animation-fill-mode: forwards;
 }
 #coche img{
@@ -40,16 +39,34 @@ body{
 
 #rampa{
     position: absolute;
-    left: 78px;
-    top: 446px;
+    left: 71px;
+    top: 224px;
 }
 
 #rampa img{
-    height: 172px;
-    width: 396px;
+    height: 392px;
+    width: 334px;
 }
 
 @keyframes movimiento_coche{
-    from {left: 6px; top: 374px;}
-    to {left:800px; top: 100px;}
+    0% {
+        transform: rotateZ(311deg);
+        left: -44px;
+        top: 306px;
+    }
+    20%{
+        left: 356px;
+        top: -299px;
+        transform: rotateZ(349deg);
+    }
+    50%{
+        left: 507px;
+        top: -96px;
+        transform: rotateZ(40deg);
+    }
+    100%{
+        left: 813px;
+        top: 435px;
+        transform: rotateZ(180deg);
+    }
 }
