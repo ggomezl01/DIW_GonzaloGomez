@@ -10,20 +10,57 @@
 </head>
 <body>
     <div id="fondo">
+        <!--Elementos-->
         <div id="coche">
             <img src="./img/coche.png" alt="Coche">
         </div>
-        <div id="muro">
-            <img src="./img/muro.png" alt="Muro">
-        </div>
-        <div id="rampa">
-            <img src="./img/rampa.png" alt="Rampa">
-        </div>
         <div id="suelo"></div>
-        <div class="driplett">
-            <img src="./img/base.png" alt="Base driplett">
-            <img src="./img/cabeza.png" alt="Base driplett">
+        <div id="cabezaDrip1">
+            <img class="cabezaDrip" src="./img/cabeza.png" alt="Cabeza driplett">
         </div>
+        <div id="baseDrip1">
+            <img class="baseDrip" src="./img/base.png" alt="Base driplett">
+        </div>
+        <div id="cabezaDrip2">
+            <img class="cabezaDrip" src="./img/cabeza.png" alt="Cabeza driplett">
+        </div>
+        <div id="baseDrip2">
+            <img class="baseDrip" src="./img/base.png" alt="Base driplett">
+        </div>
+        <div id="cabezaDrip3">
+            <img class="cabezaDrip" src="./img/cabeza.png" alt="Cabeza driplett">
+        </div>
+        <div id="baseDrip3">
+            <img class="baseDrip" src="./img/base.png" alt="Base driplett">
+        </div>
+        <div id="tnt">
+            <img src="./img/tnt.png" alt="TNT">
+        </div>
+        <div id="perro">
+            <img src="./img/perro_apagando.gif" alt="Perro apagando una casa en fuego">
+        </div>
+        <div id="pajaro1">
+            <img src="./img/pajaro.png" alt="Pájaro de Twitter">
+        </div>
+        <div id="pajaro2">
+            <img src="./img/pajaro.png" alt="Pájaro de Twitter">
+        </div>
+        <div id="explosion">
+            <img src="./img/explosion.gif" alt="Pájaro de Twitter">
+        </div>
+        <div id="fuego">
+            <img src="./img/fuego.gif" alt="Pájaro de Twitter">
+        </div>
+        <div id="bombero">
+            <img src="./img/bombero_apagando.gif" alt="Bombero">
+        </div>
+        <!--Audio-->
+        <audio class="grito" src="./audio/grito2.mp3" autoplay loop muted></audio>
+        <script>
+            const audio = document.querySelector(".grito");
+            audio.muted = false;
+            audio.play();
+        </script>
     </div>
 </body>
 </html>
