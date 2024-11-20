@@ -1,3 +1,42 @@
 .primera{
-    
+    background-color: black;
+    color: white;
+}
+
+table{
+    margin-top: 10px;
+}
+
+td:nth-of-type(1){
+    background-color: black;
+    color: white;
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+
+.diw{
+    background-color: pink;
+}
+
+.daw{
+    background-color: greenyellow;
+}
+
+.dwec{
+    background-color: brown;
+}
+
+.dwes{
+    background-color: blue;
+    color: white;
+}
+
+.libre{
+    border: 0;
 }

@@ -183,9 +183,9 @@ A partir del ejercicio anterior resuelto, determinar las reglas CSS necesarias p
 }
 
 #menu{
-    background-image: url('imagenes/fondo_menu.gif');
+    background-image: url('../imagenes/fondo_menu.gif');
 }
 
 #cabecera h1{
-    background-image: url('imagenes/logo.gif');
+    background-image: url('../imagenes/logo.gif');
 }
