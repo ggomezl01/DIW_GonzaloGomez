@@ -1,3 +1,19 @@
+body{
+    margin: 0 auto;
+}
 #nave{
-    
+    background-image: url(./img/nave.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+}
+#espacio{
+    background-image: url(./img/cielo.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
 }
