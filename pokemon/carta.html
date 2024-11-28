@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Pokemon</title>
+    <link rel="stylesheet" href="carta.css">
+</head>
+
+<body>
+    <div id="cartas">
+        <div id="fila_arriba">
+            <div class="carta jynx">
+                <div class="anverso"></div>
+                <div class="reverso"></div>
+            </div>
+            <div class="carta mrmime">
+                <div class="anverso"></div>
+                <div class="reverso"></div>
+            </div>
+            <div class="carta bouffalant">
+                <div class="anverso"></div>
+                <div class="reverso"></div>
+            </div>
+            <div class="carta kangaskhan">
+                <div class="anverso"></div>
+                <div class="reverso"></div>
+            </div>
+        </div>
+        <div id="fila_abajo">
+            <div class="carta pikachu">
+                <div class="anverso"></div>
+                <div class="reverso"></div>
+            </div>
+            <div class="carta snorlax">
+                <div class="anverso"></div>
+                <div class="reverso"></div>
+            </div>
+            <div class="carta tauros">
+                <div class="anverso"></div>
+                <div class="reverso"></div>
+            </div>
+            <div class="carta totodile">
+                <div class="anverso"></div>
+                <div class="reverso"></div>
+            </div>
+        </div>
+    </div>
+    <audio class="pokemon" src="./audio/musica.mp3" autoplay loop muted></audio>
+    <script>
+        const audio = document.querySelector(".pokemon");
+        audio.muted = false;
+        audio.play();
+    </script>
+</body>
+
+</html>

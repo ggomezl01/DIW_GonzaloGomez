@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    background-image: url("./img/fondo.jpg");
+    background-size: cover;
+}
+
+.carta{
+    width: 200px;
+    height: 278px;
+}
+.carta div{
+    transition: all 1s;
+}
+
+.carta .anverso{
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+
+.carta .reverso{
+    z-index: 10;
+    transform: rotateY(0deg);
+}
+
+.carta:hover .anverso{
+    transform: rotateY(0deg);
+    z-index: 10;
+}
+
+.carta:hover .reverso{
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.carta div{
+    width: 200px;
+    height: 278px;
+    background-size: cover;
+    position: absolute;
+}
+
+.reverso{
+    background-image: url("./img/reverso.png");
+}
+
+.jynx .anverso{
+    background-image: url("./img/jynx.png");
+}
+
+.mrmime .anverso{
+    background-image: url("./img/mrmime.png");
+}
+
+.bouffalant .anverso{
+    background-image: url("./img/bouffalant.png");
+}
+
+.kangaskhan .anverso{
+    background-image: url("./img/kangaskhan.png");
+}
+
+.pikachu .anverso{
+    background-image: url("./img/pikachu.png");
+}
+
+.snorlax .anverso{
+    background-image: url("./img/snorlax.png");
+}
+
+.tauros .anverso{
+    background-image: url("./img/tauros.png");
+}
+
+.totodile .anverso{
+    background-image: url("./img/totodile.png");
+}
+
+#fila_arriba, #fila_abajo{
+    display: flex;
+}
+
+#cartas {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
