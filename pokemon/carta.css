@@ -5,8 +5,8 @@ body{
 }
 
 .carta{
-    width: 200px;
-    height: 278px;
+    width: 150px;
+    height: 209px;
 }
 .carta div{
     transition: all 1s;
@@ -22,19 +22,19 @@ body{
     transform: rotateY(0deg);
 }
 
-.carta:hover .anverso{
+.carta.seleccionada .anverso{
     transform: rotateY(0deg);
     z-index: 10;
 }
 
-.carta:hover .reverso{
+.carta.seleccionada .reverso{
     transform: rotateY(180deg);
     z-index: 0;
 }
 
 .carta div{
-    width: 200px;
-    height: 278px;
+    width: 150px;
+    height: 209px;
     background-size: cover;
     position: absolute;
 }
