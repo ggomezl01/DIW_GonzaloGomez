@@ -1,19 +1,181 @@
 body{
     margin: 0 auto;
 }
-#nave{
-    background-image: url(./img/nave.png);
+
+#cockpit{
+    background-image: url(./img/cockpit.png);
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
+    background-position: center;
 }
+
 #espacio{
-    background-image: url(./img/cielo.jpg);
+    background-image: url(./img/cielo.png);
     background-size: cover;
     width: 100vw;
     height: 100vh;
     z-index: 0;
     position: absolute;
+    background-position: bottom;
+}
+
+#salto{
+    background-image: url(./img/salto.jpg);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    background-position: bottom;
+    animation: hipersalto ease-in-out 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hipersalto {
+    0%{
+        background-size: 100%;
+        background-position: 50% 50%;
+    }
+    25% {
+        background-size: 150%;
+        background-position: 70% 30%;
+    }
+    50% {
+        background-size: 200%;
+        background-position: 30% 70%;
+    }
+    75% {
+        background-size: 400%;
+        background-position: 70% 70%;
+    }
+    100% {
+        background-size: 100%;
+        background-position: 50% 50%;
+    }
+}
+
+#boton_inf {
+    left: 49%;
+    top: 81%;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    background-color: darkgrey;
+    width: 3vw;
+    height: 6vh;
+}
+#boton {
+    left: 49.3%;
+    top: 81.4%;
+    border-radius: 50%;
+    z-index: 4;
+    position: absolute;
+    width: 2.35vw;
+    height: 5.2vh;
+    animation: color_boton ease-in 5s;
+    animation-iteration-count: infinite;
+    background-color: rgb(110, 0, 61);
+}
+#boton.hipersalto{
+    animation: none;
+    background-color: red;
+}
+@keyframes color_boton{
+    20%{
+        background-color: rgb(88, 0, 0);
+    }
+    40%{
+        background-color: rgb(0, 88, 29);
+    }
+    60%{
+        background-color: rgb(0, 9, 88);
+    }
+    80%{
+        background-color: rgb(53, 0, 88);
+    }
+    100%{
+        background-color: rgb(110, 0, 61);
+    }
+}
+
+#estrella {
+    left: -12%;
+    top: 15%;
+    position: absolute;
+}
+#estrella img {
+    width: 42vw;
+    height: 83vh;
+}
+
+#voss{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+#voss img {
+    opacity: 0.2;
+    width: 11vw;
+    height: 22vh;
+}
+
+#anoat{
+    position: absolute;
+    top: 2%;
+    left: 28%;
+}
+#anoat img {
+    opacity: 0.7;
+    width: 7vw;
+    height: 14vh;
+}
+
+#satelite {
+    position: absolute;
+    top: 6%;
+    left: 36%;
+}
+#satelite img {
+    opacity: 0.7;
+    width: 3vw;
+    height: 7vh;
+    animation: movimiento_satelite ease-in 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimiento_satelite{
+    0%{
+        transform: rotateZ(78deg);
+    }
+    50%{
+        transform: rotateZ(35deg);
+    }
+    100%{
+        transform: rotateZ(78deg);
+    }
+}
+
+#nave1 {
+    position: absolute;
+    top: -5%;
+    left: 52%;
+}
+#nave1 img {
+    transform: rotateZ(53deg);
+    width: 17vw;
+    height: 18vh;
+}
+
+#nave2 {
+    position: absolute;
+    top: 45%;
+    left: 77%;
+}
+#nave2 img {
+    transform: rotateZ(236deg);
+    width: 13vw;
+    height: 14vh;
 }

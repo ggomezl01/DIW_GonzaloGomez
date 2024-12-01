@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nave espacial</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
 
-<body>
+  <body>
     <div id="espacio">
-        <div id="nave">
-        </div>
+      <div id="salto" hidden></div>
+      <div id="cockpit"></div>
+      <div id="estrella">
+        <img src="./img/estrella_muerte.png" alt="Estrella de la Muerte" />
+      </div>
+      <div id="boton_inf"></div>
+      <div id="boton"></div>
+      <div id="anoat"><img src="./img/anoat.png" alt="Anoat" /></div>
+      <div id="voss"><img src="./img/voss.png" alt="Voss" /></div>
+      <div id="satelite"><img src="./img/satelite.png" alt="Satélite" /></div>
+      <div id="nave1"><img src="./img/nave2.png" alt="Nave 1" /></div>
+      <div id="nave2"><img src="./img/nave2.png" alt="Nave 2" /></div>
     </div>
-</body>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const boton = document.getElementById("boton");
+        const salto = document.getElementById("salto");
+
+        boton.addEventListener("click", function () {
+          if (boton.classList.contains("hipersalto")) {
+            boton.classList.remove("hipersalto");
+            salto.hidden = true;
+          } else {
+            boton.classList.add("hipersalto");
+            salto.hidden = false;
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
