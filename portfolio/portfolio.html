@@ -1,24 +1,325 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gonzalo Gómez</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonzalo Gomez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="portfolio.css">
-</head>
-
-<body>
-    <nav class="nav nav-tabs justify-content-center">
-        <div class="nav-item">
-            <img src="./img/logo_web.png" alt="Logotipo">
-        </div>
+  </head>
+  <body>
+    <nav class="navegacion">
+      <h1>GONZALO</h1>
+      <h1>GOMEZ</h1>
+      <ul class="nav flex-column text-center">
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#resumen">Resumen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#formacion">Formacion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#vosotros">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#referencias">Referencias</a>
+        </li>
+      </ul>
     </nav>
-</body>
 
+    <div class="contenido">
+      <section id="resumen">
+        <h2>Resumen</h2>
+        <img src="./img/DSCN4043.JPG" alt="Yo con una corona de flores sacándome una foto con una cámara">
+        <p>En este porfolio, podrás encontrar las siguientes secciones:</p>
+        <p>Proyectos, donde te mostraré algunos de mis últimos trabajos.</p>
+        <p>En formación puedes ver todo lo que he estudiado, con información de los centros en los que los he cursado y los años en los que comprende cada periodo.</p>
+        <p>En sobre mi, podrás conocerme de forma más personal, viendo cosas que me gustan, habilidades o simplemente anécdotas y cosas que han pasado por mi vida.</p>
+      </section>
+
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div id="carruselProyectos" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Item 1"></button>
+            <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="1" aria-label="Item 2"></button>
+            <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="2" aria-label="Item 3"></button>
+            <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="3" aria-label="Item 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/carrusel_proyectos/pokemon.png" class="d-block w-100" alt="Juego de cartas Pokemon">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Juego de Pokemon</h5>
+                <p>En este trabajo, hice un juego de cartas estilo Memory en el que tienes que buscar las parejas de los distintos pokemon. El proyecto incluye
+                  música personalizada y además, un confetti final si consigues resolver todas las parejas correctamente. En un futuro contemplo añadir un temporizador
+                  o que cuente el número de intentos.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <video class="d-block w-100" autoplay loop>
+                  <source src="./img/carrusel_proyectos/coche.mkv" type="video/mp4">
+                  Tu navegador no soporta el elemento de vídeo.
+              </video>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Animación Coche</h5>
+                <p>En este trabajo, hice uso de animaciones y transiciones para crear una situación en la que un coche chocaba contra TNT.
+                  Durante el choque, se puede escuchar el grito de una persona atrapada dentro de él, además de que aparece fuego, humo, la explosión
+                  y además los bomberos, tanto humano como perruno, para apagar el fuego.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carrusel_proyectos/nave.png" class="d-block w-100" alt="Halcón Milenario de Star Wars">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Nave de Star Wars</h5>
+                <p>Esto que veis aquí es nada más y nada menos que el Halcón Milenario. Se puede observar el espacio, con sus planetas,
+                  incluso con la Estrella de la Muerte, además de algún satélite que rota. También hay dos naves enfrentadas y además,
+                  dentro del Halcón puedes presionar un botón que permite lanzar una animación que simula un hipersalto al más allá.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carrusel_proyectos/halloween.png" class="d-block w-100" alt="Juego de Halloween">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Halloween</h5>
+                <p>No hay nada como los trabajos especiales y temáticos, en este caso de Halloween por la época de entrega. En esas fechas se acababa una de mis series favoritas,
+                  Agatha Quién Si No, de Marvel Studios. Decidí incorporar a dos protagonistas y añadirlos en esta casa encantada, que tiene una calabaza que le giran los ojos,
+                  un murciélago que se convierte en la bandera de España, uno de los protagonistas que si mantienes el ratón cerca de su cabeza aparece su corona u otro que
+                  decide bajar y moverse volando como buena bruja.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselProyectos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselProyectos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="formacion">
+        <h2>Formacion</h2>
+        <h3>Educacion</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
+          <div class="col">
+            <div class="card">
+              <img src="./img/formacion/escolapios.jpg" class="card-img-top" alt="Logo de Escolapios Logroño">
+              <div class="card-body">
+                <h5 class="card-title">Educación obligatoria</h5>
+                <p class="card-text justificado">En Escolapios Logroño cursé Educación Infantil, Educación Primaria y Educación Secundaria Obligatoria. El último año me vi afectado
+                  por la pandemia de COVID-19, teniendo que realizar gran parte del curso de forma telemática confinados desde nuestras casas. Tanto es así que
+                  tanto mi viaje de estudios como mi graduación no se llegaron a realizar, siendo sustituido por un acto simbólico.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">2007-2020</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/formacion/jesuitas.jpg" class="card-img-top" alt="Logo de Jesuitas Logroño">
+              <div class="card-body">
+                <h5 class="card-title">Grado Medio en Sistemas Microinformáticos y Redes</h5>
+                <p class="card-text justificado">Una vez la pandemia permitió volver a las aulas, comencé un CFGM de Informática, el único que hay a diferencia de Grado Superior,
+                  donde puedes especializarte. Aprendí mucho y fueron dos años increíbles, en los que sí que tuve graduación y además prácticas en empresa.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">2020-2022</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/formacion/comercio.jpg" class="card-img-top" alt="Logo de IES Comercio Logroño">
+              <div class="card-body">
+                <h5 class="card-title">Grado Superior en Desarrollo de Aplicaciones Multiplataforma (Primera parte del Doble Grado)</h5>
+                <p class="card-text justificado">Una vez acabado el grado medio, decidí centrarme en la programación más que en los sistemas en red. Intenté
+                  estudiar el doble grado en Jesuitas pero por una décima y los porcentajes de plazas quedé fuera, lo que hizo que comenzase mi etapa en IES Comercio,
+                  un centro público después de pasar mi vida en centros privados concertados. Hice estos dos años, aunque el primero es común a ambos grados, y aunque
+                  la dificultad aumentó bastante y en muchos momentos me hizo pasarlo mal, conseguí lidiar con ello y titularme y graduarme de la primera parte. Además,
+                  realizé un TFG basado en una app móvil de venta de entradas, tanto de gestión del vendedor como del comprador.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">2022-2024</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/formacion/comercio.jpg" class="card-img-top" alt="Logo de IES Comercio Logroño">
+              <div class="card-body">
+                <h5 class="card-title">Grado Superior en Desarrollo de Aplicaciones Web (Segunda parte del Doble Grado)</h5>
+                <p class="card-text justificado">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">2024-2025</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Practicas laborales</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
+          <div class="col">
+            <div class="card">
+              <img src="./img/formacion/larioja.jpg" class="card-img-top" alt="Logo de Diario La Rioja">
+              <div class="card-body">
+                <h5 class="card-title">Diario La Rioja / larioja.com / Vocento</h5>
+                <p class="card-text justificado">Como prácticas de mi grado medio, estuve en la parte informática de Diario La Rioja, el principal periódico de nuestra región
+                  y que pertenece al grupo editorial Vocento, que recoge a varios periódicos de muchas regiones y a nacionales como Diario ABC. Estuve encargado de un gran
+                  proyecto orientado al procesado OCR de periódicos desde su creación para la creación de una gran hemeroteca digital, además de poder mantener la página web y
+                  realizar juegos y características web para el periódico.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Marzo 2022 - Junio 2022</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/formacion/inetum.jpg" class="card-img-top" alt="Logo de INETUM">
+              <div class="card-body">
+                <h5 class="card-title">INETUM / Quirónsalud</h5>
+                <p class="card-text justificado">Como prácticas de mi doble grado superior, comencé el primer año en esta empresa con el mantenimiento del sistema informático
+                  utilizado en hospitales de gestión pública y privada de Quirónsalud, llamado Casiopea. Me centré principalmente en HTML y JavaScript, aunque también tuve que
+                  tocar partes en C# y relacionado con los conocidos como Entity Framework, además de bases de datos aunque no de manera profunda. Estas prácticas se han mantenido
+                  igual en el segundo año y, si todo sale según lo previsto, este tercer y último año continuaré realizando mis prácticas laborales aquí.
+                </p>
+              </div>
+              <div class="card-footer">
+                <p><small class="text-body-secondary">Mayo 2023 - Junio 2023</small></p>
+                <p><small class="text-body-secondary">Febrero 2024 - Junio 2024</small></p>
+                <p><small class="text-body-secondary">¿Febrero 2025 - Junio 2025?</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Otros</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
+          <div class="col">
+            <div class="card">
+              <img src="./img/formacion/movimiento.jpg" class="card-img-top" alt="Logo de Movimiento Calasanz">
+              <div class="card-body">
+                <h5 class="card-title">Movimiento Calasanz (Voluntariado) / Itaka Escolapios</h5>
+                <p class="card-text justificado">Gracias a ser alumno de Escolapios Logroño, desde primero de la ESO comencé a estar en Movimiento Calasanz, unos grupos
+                  de tiempo libre católicos en los que se realizaban voluntariados de índole social y actividades relacionadas con el colegio, como recogidas de alimentos,
+                  de juguetes para los más desfavorecidos o campamentos. A partir de 1º CFGM, me impliqué más activamente en el voluntariado, realizando varios en sitios
+                  como el Banco de Alimentos o la Cocina Económica, y a partir de 2º CFGM siendo monitor al igual que yo los tuve, estando con niños de 4º Primaria.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/formacion/congreso.jpg" class="card-img-top" alt="Logo del II Congreso sobe Violencia Sexual">
+              <div class="card-body">
+                <h5 class="card-title">II Congreso sobre Violencia Sexual #SoloSíEsSí</h5>
+                <p class="card-text justificado">Como prácticas de mi doble grado superior, comencé el primer año en esta empresa con el mantenimiento del sistema informático
+                  utilizado en hospitales de gestión pública y privada de Quirónsalud, llamado Casiopea. Me centré principalmente en HTML y JavaScript, aunque también tuve que
+                  tocar partes en C# y relacionado con los conocidos como Entity Framework, además de bases de datos aunque no de manera profunda. Estas prácticas se han mantenido
+                  igual en el segundo año y, si todo sale según lo previsto, este tercer y último año continuaré realizando mis prácticas laborales aquí.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">15-16 Septiembre 2022</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="vosotros">
+        <h2>Sobre mi</h2>
+        <p class="justificado">Aunque hay tantas cosas que podría decir que me gusta hacer, he elegido una: VIAJAR. Desde pequeño me ha gustado descubrir sitios, y por eso he podido
+          visitar sitios como Francia, Reino Unido o Portugal. Quizá no son muchísimos países internacionales, pero he de decir que el turismo nacional es increíble,
+          conocer los rincones de nuestro país es belleza pura y además hace pasar grandes momentos. Estas son todas las comunidades autónomas que he visitado (rojo):
+        </p>
+        <img src="./img/comunidades.png" alt="Mapa de las comunidades autónomas">
+        <p class="justificado">Con imágenes, quiero destacar el gran viaje de este año. Gracias a la Comisión Europea, que realiza sorteos cuando cumplimos 18 años, mi grupo de amigas y yo
+          conseguimos un pase Interrail para poder viajar por Europa. Decidimos usarlo en hacer un viaje por toda Portugal, empezando desde Sevilla para ir a Faro y terminando
+          yéndonos de Oporto a Santiago de Compostela. Estuvimos 12-13 días de viaje, y la verdad que fue una experiencia increíble y que además necesitaba después de algunos momentos
+          difíciles a nivel personal, aunque con la felicidad de haberme graduado. Salimos el 4 de julio de 2024, y aquí algunas de las ciudades que visité con mis amigas:
+        </p>
+        <div id="carruselPortugal" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselPortugal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Item 1"></button>
+            <button type="button" data-bs-target="#carruselPortugal" data-bs-slide-to="1" aria-label="Item 2"></button>
+            <button type="button" data-bs-target="#carruselPortugal" data-bs-slide-to="2" aria-label="Item 3"></button>
+            <button type="button" data-bs-target="#carruselPortugal" data-bs-slide-to="3" aria-label="Item 4"></button>
+            <button type="button" data-bs-target="#carruselPortugal" data-bs-slide-to="4" aria-label="Item 5"></button>
+            <button type="button" data-bs-target="#carruselPortugal" data-bs-slide-to="5" aria-label="Item 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/portugal/belem.jpg" class="d-block w-100" alt="Belém">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Belém</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portugal/coimbra.JPEG" class="d-block w-100" alt="Coímbra">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Coímbra</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portugal/faro.jpg" class="d-block w-100" alt="Faro">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Faro</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portugal/lisboa.JPEG" class="d-block w-100" alt="Lisboa">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lisboa</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portugal/oporto.JPEG" class="d-block w-100" alt="Oporto">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Oporto</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portugal/sintra.jpg" class="d-block w-100" alt="Sintra">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sintra</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselPortugal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselPortugal" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="referencias">
+        <h2>Referencias para el portfolio</h2>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link link-light" href="https://ortiz-fluid-demo.squarespace.com/">Ortiz Photography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="https://brittanychiang.com/">Brittany Chiang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="https://olaolu.dev/">Olaolu</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
 </html>

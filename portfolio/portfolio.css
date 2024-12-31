@@ -1,3 +1,94 @@
-nav div img{
-    width: 15vw;
-}
+  @font-face {
+    font-family: "Online Privileges";
+    src: url(./font/OnlinePrivileges.ttf);
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  h1, h2, a{
+    font-family: 'Online Privileges';
+    color: white;
+  }
+
+  h3{
+    font-family: 'Online Privileges';
+    color: grey;
+  }
+
+  body {
+    background-color: rgb(0, 0, 92);
+    display: flex;
+    margin: 0;
+  }
+
+  .navegacion {
+    background-image: url(./img/fondo_lanzadera.gif);
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenido {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    width: 65%;
+  }
+
+  .contenido section{
+    padding-bottom: 20px;
+  }
+
+  #resumen img{
+    width: 40%;
+    padding-bottom: 10px;
+  }
+
+  #vosotros img{
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  #resumen p, #vosotros p{
+    color: rgb(218, 218, 218);
+  }
+
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+    .navegacion {
+      width: 100%;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+    .contenido {
+      width: 100%;
+    }
+  }
+
+  div .carousel-item img, div .carousel-item video{
+    opacity: 0.8;
+  }
+
+  .justificado{
+    text-align: justify;
+  }
+
+  .card{
+    z-index: 1;
+  }
+
+  .navegacion{
+    z-index: 100;
+  }
