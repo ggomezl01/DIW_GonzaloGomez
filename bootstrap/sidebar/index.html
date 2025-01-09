@@ -1,127 +1,310 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidebar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="sidebars.css">
-    <link rel="stylesheet" href="estilos.css">
-  </head>
-  <body>
-    <div class="flex-shrink-0 vh-100" style="width: 280px;">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none border-bottom fijo">
-          <span class="fs-5 fw-semibold"><img src="./img/comercio.jpg" id="logotipoCorreo" alt="Logotipo de IES Comercio"></span>
-        </a>
-        <ul class="list-unstyled ps-0 flex-column">
-          <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#eso-collapse" aria-expanded="true">
-              Educación Secundaria Obligatoria
-            </button>
-            <div class="collapse show" id="eso-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">1º E.S.O.</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2º E.S.O.</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">3º E.S.O.</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">4º E.S.O.</a></li>
-              </ul>
-            </div>
-          </li>
 
-          <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#bachiller-collapse" aria-expanded="false">
-              Bachillerato
-            </button>
-            <div class="collapse" id="bachiller-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">General</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Humanidades y Ciencias Sociales</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Ciencias y Tecnología</a></li>
-              </ul>
-            </div>
-          </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sidebars.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
 
-          <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#fpbasico-collapse" aria-expanded="false">
-              FP Grado Básico
-            </button>
-            <div class="collapse" id="fpbasico-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">FP Básica en Servicios Administrativos</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">FP Básica en Servicios Comerciales</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">FP Básica en Informática y Comunicaciones (Vespertino)</a></li>
-              </ul>
-            </div>
-          </li>
+<body>
+  <div class="d-flex flex-column flex-shrink-0 vh-100 sidebar">
+    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none border-bottom fijo">
+      <span class="fs-5 fw-semibold"><img src="./img/comercio.jpg" id="logotipoCorreo"
+          alt="Logotipo de IES Comercio"></span>
+    </a>
+    <ul class="list-unstyled ps-0 flex-column">
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+          data-bs-toggle="collapse" data-bs-target="#eso-collapse" aria-expanded="true">
+          Educación Secundaria Obligatoria
+        </button>
+        <div class="collapse show" id="eso-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">1º E.S.O.</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2º E.S.O.</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">3º E.S.O.</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">4º E.S.O.</a></li>
+          </ul>
+        </div>
+      </li>
 
-          <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#fpmedio-collapse" aria-expanded="false">
-              FP Grado Medio
-            </button>
-            <div class="collapse" id="fpmedio-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sistemas Microinformáticos y Redes (Diurno)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sistemas Microinformáticos y Redes (Vespertino)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Actividades Comerciales (Vespertino)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Gestión Administrativa (Diurno)</a></li>
-              </ul>
-            </div>
-          </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+          data-bs-toggle="collapse" data-bs-target="#bachiller-collapse" aria-expanded="false">
+          Bachillerato
+        </button>
+        <div class="collapse" id="bachiller-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">General</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Humanidades y Ciencias
+                Sociales</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Ciencias y
+                Tecnología</a></li>
+          </ul>
+        </div>
+      </li>
 
-          <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#fpsuperior-collapse" aria-expanded="false">
-              FP Grado Superior
-            </button>
-            <div class="collapse" id="fpsuperior-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Administración de Sistemas Informáticos en Red (Diurno)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Desarrollo de Aplicaciones Multiplataforma (Diurno)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Desarrollo de Aplicaciones Multiplataforma (Vespertino)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Desarrollo de Aplicaciones Web (Vespertino)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Comercio Internacional (Diurno)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Marketing y Publicidad (Vespertino)</a></li>
-              </ul>
-            </div>
-          </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+          data-bs-toggle="collapse" data-bs-target="#fpbasico-collapse" aria-expanded="false">
+          FP Grado Básico
+        </button>
+        <div class="collapse" id="fpbasico-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">FP Básica en Servicios
+                Administrativos</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">FP Básica en Servicios
+                Comerciales</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">FP Básica en
+                Informática y Comunicaciones (Vespertino)</a></li>
+          </ul>
+        </div>
+      </li>
 
-          <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#fpdual-collapse" aria-expanded="false">
-              FP Dual
-            </button>
-            <div class="collapse" id="fpdual-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Doble Titulación de Desarrollo en Aplicaciones Multiplataforma y Web (Vespertino)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Administración y Finanzas (Diurno)</a></li>
-              </ul>
-            </div>
-          </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+          data-bs-toggle="collapse" data-bs-target="#fpmedio-collapse" aria-expanded="false">
+          FP Grado Medio
+        </button>
+        <div class="collapse" id="fpmedio-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sistemas
+                Microinformáticos y Redes (Diurno)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sistemas
+                Microinformáticos y Redes (Vespertino)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Actividades
+                Comerciales (Vespertino)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Gestión Administrativa
+                (Diurno)</a></li>
+          </ul>
+        </div>
+      </li>
 
-          <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#grados-collapse" aria-expanded="false">
-              Grados de especialización
-            </button>
-            <div class="collapse" id="grados-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Inteligencia Artificial y Big Data (Vespertino)</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Desarrollo de Videojuegos y Realidad Virtual (Vespertino)</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <div class="dropdown abajo">
-            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="./img/usuario.png" alt="" width="32" height="32" class="rounded-circle me-2">
-              <strong>Gonzalo Gómez Luque</strong>
-            </a>
-            <ul class="dropdown-menu text-small shadow">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+          data-bs-toggle="collapse" data-bs-target="#fpsuperior-collapse" aria-expanded="false">
+          FP Grado Superior
+        </button>
+        <div class="collapse" id="fpsuperior-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Administración de
+                Sistemas Informáticos en Red (Diurno)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Desarrollo de
+                Aplicaciones Multiplataforma (Diurno)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Desarrollo de
+                Aplicaciones Multiplataforma (Vespertino)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Desarrollo de
+                Aplicaciones Web (Vespertino)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Comercio Internacional
+                (Diurno)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Marketing y Publicidad
+                (Vespertino)</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+          data-bs-toggle="collapse" data-bs-target="#fpdual-collapse" aria-expanded="false">
+          FP Dual
+        </button>
+        <div class="collapse" id="fpdual-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Doble Titulación de
+                Desarrollo en Aplicaciones Multiplataforma y Web (Vespertino)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Administración y
+                Finanzas (Diurno)</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+          data-bs-toggle="collapse" data-bs-target="#grados-collapse" aria-expanded="false">
+          Grados de especialización
+        </button>
+        <div class="collapse" id="grados-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Inteligencia
+                Artificial y Big Data (Vespertino)</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Desarrollo de
+                Videojuegos y Realidad Virtual (Vespertino)</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="dropdown abajo mt-auto">
+      <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="./img/usuario.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>Gonzalo Gómez Luque</strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="contenido p-3">
+    <h1>Doble Titulación de Desarrollo en Aplicaciones Multiplataforma y Web (Vespertino)</h1>
+    <table class="table table-hover table-sm table-bordered mt-5">
+      <caption>Lista de asignaturas</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Asignatura</th>
+          <th scope="col">Profesor</th>
+          <th scope="col">Contacto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">0</th>
+          <td>Tutoría</td>
+          <td>Yolanda Méndez Terreros</td>
+          <td>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContacto"
+              data-bs-whatever="Yolanda Méndez Terreros">Contactar</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Despliegue de Aplicaciones Web</td>
+          <td>Yolanda Méndez Terreros</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContacto"
+              data-bs-whatever="Yolanda Méndez Terreros">Contactar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Diseño de interfaces web</td>
+          <td>Emilio Eguizábal Pérez-Aradros</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContacto"
+              data-bs-whatever="Emilio Eguizábal Pérez-Aradros">Contactar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Desarrollo web en entorno cliente</td>
+          <td>Alfonso Beltrán Muro</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContacto"
+              data-bs-whatever="Alfonso Beltrán Muro">Contactar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Desarrollo web en entorno servidor</td>
+          <td>Ana Pérez Seijas</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContacto"
+              data-bs-whatever="Ana Pérez Seijas">Contactar</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="tituloModalContacto" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="tituloModalContacto">Escribir un mensaje</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Destinatario:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
         </div>
       </div>
-  </body>
+    </div>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLocalizacion">
+      Dónde estamos
+    </button>
+
+    <div class="modal fade" id="modalLocalizacion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="tituloModalLocalizacion" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="tituloModalLocalizacion">Dónde estamos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Puedes encontrarnos en <strong>Paseo del Prior, 97, 26004 Logroño, La Rioja</strong>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11772.080285434664!2d-2.4299694!3d42.4698618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5aab0dbd9ed72d%3A0xda98798954220d52!2sIES%20Comercio!5e0!3m2!1ses!2ses!4v1736439896214!5m2!1ses!2ses"
+              width="100%" height="100%" class="mt-3" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal">
+      Graduación
+    </button>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="tituloVideoModal" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tituloVideoModal">Graduación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZXLO7Y9Y_gQ?si=KISH3Pm8JDlsi8rj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    const modalContacto = document.getElementById('modalContacto')
+    if (modalContacto) {
+      modalContacto.addEventListener('show.bs.modal', event => {
+        // Button that triggered the modal
+        const button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        const recipient = button.getAttribute('data-bs-whatever')
+        // If necessary, you could initiate an Ajax request here
+        // and then do the updating in a callback.
+
+        // Update the modal's content.
+        const modalTitle = modalContacto.querySelector('.modal-title')
+        const modalBodyInput = modalContacto.querySelector('.modal-body input')
+
+        modalTitle.textContent = `Mensaje para ${recipient}`
+        modalBodyInput.value = recipient
+      })
+    }
+  </script>
+</body>
+
 </html>

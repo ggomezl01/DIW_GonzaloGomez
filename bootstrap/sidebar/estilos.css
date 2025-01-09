@@ -1,19 +1,37 @@
-.fijo{
+.fijo {
     position: sticky;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     z-index: 1;
+    background-color: white;
 }
+
 #logotipoCorreo{
     width: 100%;
 }
-.abajo{
+
+.abajo {
     position: sticky;
-    bottom: 0%;
-    left: 0%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
     background-color: #019DB4;
     padding: 5%;
+    color: white;
 }
+
+body{
+    display: flex;
+}
+
 body::-webkit-scrollbar {
     display: none;
+}
+
+.sidebar{
+    width: 25%;
+}
+
+.contenido{
+    width: 75%;
 }
