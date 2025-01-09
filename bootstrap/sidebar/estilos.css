@@ -14,3 +14,6 @@
     background-color: #019DB4;
     padding: 5%;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
